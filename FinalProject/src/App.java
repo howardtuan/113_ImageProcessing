@@ -28,23 +28,23 @@ public class App {
         ImageIO.write(contrastStretchedImage, "jpg", new File("contrastStretchedImage.jpg"));
 
         // 6. 添加椒鹽雜訊
-        BufferedImage noisyImage = SaltAndPepperNoise.addSaltAndPepperNoise(grayImage, 0.05);
+        BufferedImage noisyImage = SaltAndPepperNoise.addSaltAndPepperNoise(gammaLessImage, 0.05);
         ImageIO.write(noisyImage, "jpg", new File("noisyImage.jpg"));
 
         // 7. 中值濾波
         BufferedImage medianFilteredImage = MedianFilter.medianFilter(noisyImage);
         ImageIO.write(medianFilteredImage, "jpg", new File("medianFilteredImage.jpg"));
 
-        // 8. 最大值濾波
-        BufferedImage maxFilteredImage = MaxFilter.maxFilter(noisyImage);
-        ImageIO.write(maxFilteredImage, "jpg", new File("maxFilteredImage.jpg"));
-
-        // 9. Laplacian 邊緣檢測
-        BufferedImage laplacianImage = LaplacianEdgeDetection.laplacianEdgeDetection(grayImage);
+        // 8. Laplacian 邊緣檢測
+        BufferedImage laplacianImage = LaplacianEdgeDetection.laplacianEdgeDetection(contrastStretchedImage);
         ImageIO.write(laplacianImage, "jpg", new File("laplacianImage.jpg"));
 
+        // 9. 最大值濾波
+        BufferedImage maxFilteredImage = MaxFilter.maxFilter(laplacianImage);
+        ImageIO.write(maxFilteredImage, "jpg", new File("maxFilteredImage.jpg"));
+
         // 10. OTSU 二值化 (Bonus)
-        BufferedImage otsuImage = OtsuBinarization.otsuBinarization(grayImage);
+        BufferedImage otsuImage = OtsuBinarization.otsuBinarization(gammaMoreImage);
         ImageIO.write(otsuImage, "jpg", new File("otsuImage.jpg"));
     }
 }
