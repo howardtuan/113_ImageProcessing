@@ -6,7 +6,7 @@ public class SaltAndPepperNoise {
     /**
      * 向圖片添加椒鹽雜訊
      *
-     * @param image      原始圖片
+     * @param image      Gamma 調整 (Gamma < 1) 圖片
      * @param noiseLevel 雜訊比例（範圍 0 到 1）
      * @return 添加雜訊後的 BufferedImage
      */

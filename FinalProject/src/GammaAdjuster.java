@@ -5,7 +5,7 @@ public class GammaAdjuster {
     /**
      * 調整圖片的 Gamma 值
      *
-     * @param image 原始圖片
+     * @param image 灰階圖片
      * @param gamma Gamma 調整值（建議範圍 > 0）
      * @return 調整後的 BufferedImage
      */

@@ -5,7 +5,7 @@ public class NegativeImageConverter {
     /**
      * 將圖片轉換為負片
      *
-     * @param image 原始圖片
+     * @param image 灰階圖片
      * @return 負片轉換後的 BufferedImage
      */
     public static BufferedImage toNegative(BufferedImage image) {

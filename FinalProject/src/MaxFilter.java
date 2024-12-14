@@ -5,7 +5,7 @@ public class MaxFilter {
     /**
      * 對圖片應用最大值濾波
      *
-     * @param image 原始圖片
+     * @param  Laplacian 邊緣檢測圖片
      * @return 濾波後的 BufferedImage
      */
     public static BufferedImage maxFilter(BufferedImage image) {

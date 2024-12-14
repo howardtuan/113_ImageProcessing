@@ -5,7 +5,7 @@ public class ContrastStretch {
     /**
      * 對圖片進行對比拉伸
      *
-     * @param image 原始圖片
+     * @param image 灰階圖片
      * @return 進行對比拉伸後的 BufferedImage
      */
     public static BufferedImage contrastStretch(BufferedImage image) {

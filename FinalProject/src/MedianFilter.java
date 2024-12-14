@@ -6,7 +6,7 @@ public class MedianFilter {
     /**
      * 對圖片應用中值濾波
      *
-     * @param image 原始圖片
+     * @param image 椒鹽雜訊圖片
      * @return 濾波後的 BufferedImage
      */
     public static BufferedImage medianFilter(BufferedImage image) {

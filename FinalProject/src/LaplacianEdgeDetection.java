@@ -5,7 +5,7 @@ public class LaplacianEdgeDetection {
     /**
      * 使用 Laplacian 核心對圖片進行邊緣檢測
      *
-     * @param image 原始圖片（假設為灰階圖片）
+     * @param  對比拉伸圖片
      * @return 邊緣檢測後的 BufferedImage
      */
     public static BufferedImage laplacianEdgeDetection(BufferedImage image) {

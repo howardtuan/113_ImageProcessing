@@ -5,7 +5,7 @@ public class OtsuBinarization {
     /**
      * 使用 OTSU 方法進行圖片二值化
      *
-     * @param image 原始圖片（假設為灰階圖片）
+     * @param  Gamma 調整 (Gamma > 1)圖片
      * @return 二值化後的 BufferedImage
      */
     public static BufferedImage otsuBinarization(BufferedImage image) {
